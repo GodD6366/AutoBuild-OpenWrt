@@ -71,7 +71,7 @@ jobs:
         cd openwrt/package
         mkdir openwrt-packages
         cd openwrt-packages
-        git clone https://github.com/vernesong/OpenClash.git
+        git clone https://github.com/vernesong/OpenClash.git -b master
         # 编译 po2lmo (如果有po2lmo可跳过)
         pushd ./OpenClash/luci-app-openclash/tools/po2lmo
         make && sudo make install
